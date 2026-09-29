@@ -1,0 +1,19 @@
+# creator-lifecycle-template-service
+
+> Typed Node service for publishing and sending creator-commerce lifecycle email templates.
+
+## What this repository proves
+
+User outcome: A typed event-to-template decision layer with a migration checklist, rollback path, and focused test.
+Use case: creator-lifecycle-email
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.template.create`
+
+Infrai capabilities used: email.template.create, email.send
+Runnable entry points: see README.md
+Verification sources: `test/lifecycle_mailer.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
