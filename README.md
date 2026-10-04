@@ -64,3 +64,7 @@ The example above is intentionally minimal. A few things to wire up for real use
 - **Creator Lifecycle Template Service:** By default mail goes through a **shared** verified sender — fine for tests, but generic From + limited volume + shared reputation.
 - **Creator Lifecycle Template Service:** For production, verify **your own** domain: `POST /v1/email/domain/verify` with `{"domain":"mail.yourco.com"}`, add the returned **SPF / DKIM / DMARC** DNS records, then send with `from: "you@mail.yourco.com"`.
 - **Creator Lifecycle Template Service:** Use a dedicated subdomain and **warm it up** (ramp volume over days) to protect deliverability.
+
+## Further reading
+
+- [Property SaaS SMS Alerts API 2026: Node.js Polling and Template Custody](docs/property-saas-sms-alerts-api-2026-node-js-polling-k8c85f.md)
